@@ -1,0 +1,14 @@
+{
+    "name": "believer-ufa/telegram-bot-rawg",
+    "description": "RAWG bot for Telegram",
+    "type": "project",
+    "require": {
+        "php-curl-class/php-curl-class": "^8.5"
+    },
+    "authors": [
+        {
+            "name": "Roman Akhmadullin",
+            "email": "freeman.aka.ahmed@gmail.com"
+        }
+    ]
+}
