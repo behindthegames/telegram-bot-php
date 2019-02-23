@@ -3,10 +3,8 @@
 use \Curl\Curl;
 
 function loadGameData($game) {
-  $firstGame = $curl->response->results[0];
+  $curl = new Curl();
+  $curl->get("https://rawg.io/api/games/{$game->slug}");
 
-  $curl2 = new Curl();
-  $curl2->get("https://rawg.io/api/games/{$game->slug}");
-
-  return $curl2->response;
+  return $curl->response;
 }

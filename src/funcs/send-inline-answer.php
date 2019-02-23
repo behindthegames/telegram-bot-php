@@ -7,6 +7,6 @@ function sendInlineAnswer($id, $results) {
   $curl->post('https://api.telegram.org/***REMOVED***/answerInlineQuery', [
     'inline_query_id' => $id,
     'results' => json_encode($results),
-    'cache_time' => 1,
+    'cache_time' => 6000,
   ]);
 }
